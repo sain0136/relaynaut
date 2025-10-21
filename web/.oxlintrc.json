@@ -1,0 +1,56 @@
+// ...existing code...
+{
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn",
+    "style": "warn"
+  },
+  "plugins": ["typescript", "vue"],
+  "rules": {
+    "no-console": "warn",
+    "no-debugger": "error",
+    "no-var": "error",
+    "prefer-const": "warn",
+    "eqeqeq": "error",
+    "curly": "error",
+    "consistent-return": "warn",
+    "no-empty-function": "warn",
+    "no-unused-expressions": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["**/*.vue"],
+      "parser": "vue",
+      "plugins": ["vue"],
+      "rules": {
+        "vue/no-unused-components": "warn",
+        "vue/no-unused-vars": "warn",
+        "vue/multi-word-component-names": "off",
+        "no-console": "warn"
+      }
+    },
+    {
+      "files": ["**/*.{ts,tsx}"],
+      "plugins": ["typescript"],
+      "rules": {
+        "typescript/no-explicit-any": "warn",
+        "typescript/no-unused-vars": "warn",
+        "typescript/no-floating-promises": "warn"
+      }
+    },
+    {
+      "files": ["**/*.spec.ts", "**/*.test.ts", "**/*.spec.tsx", "**/*.test.tsx"],
+      "rules": {
+        "no-console": "off"
+      }
+    }
+  ],
+  "ignorePatterns": [
+    "dist",
+    "node_modules",
+    "web/dist",
+    "coverage",
+    "**/*.d.ts"
+  ]
+}
+// ...existing code...
