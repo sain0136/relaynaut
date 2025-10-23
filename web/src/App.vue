@@ -21,7 +21,8 @@
 h1 {
   margin: 0;
   font-size: 3rem;
-  color: inherit; /* keep from global style.css */
+  color: inherit;
+  /* keep from global style.css */
 }
 
 .phase {

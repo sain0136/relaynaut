@@ -1,0 +1,14 @@
+[workspace]
+members = [
+    "crates/relaynaut-agent",
+    "crates/relaynaut-common",
+    "crates/relaynaut-controller",
+    "crates/relaynaut-hftpack",
+]
+
+# Shared compiler profile (applies to all members)
+[profile.release]
+lto = "thin"
+codegen-units = 1
+opt-level = 3
+debug = false
