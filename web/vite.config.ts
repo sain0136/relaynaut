@@ -1,7 +1,20 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+import { defineConfig } from 'vite';
+import path from 'path';
+import vue from '@vitejs/plugin-vue';
 
-// https://vite.dev/config/
 export default defineConfig({
+  base: '/', // set to '/subpath/' if deploying to a subfolder
+  build: {
+    outDir: 'dist',
+    sourcemap: true, // set to false for smaller builds
+  },
+  define: {
+    'process.env': {},
+  },
   plugins: [vue()],
-})
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, 'src'),
+    },
+  },
+});
