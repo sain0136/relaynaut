@@ -5,7 +5,10 @@
     "suspicious": "warn",
     "style": "warn"
   },
-  "plugins": ["typescript", "vue"],
+  "plugins": [
+    "typescript",
+    "vue"
+  ],
   "rules": {
     "no-console": "warn",
     "no-debugger": "error",
@@ -19,9 +22,13 @@
   },
   "overrides": [
     {
-      "files": ["**/*.vue"],
+      "files": [
+        "**/*.vue"
+      ],
       "parser": "vue",
-      "plugins": ["vue"],
+      "plugins": [
+        "vue"
+      ],
       "rules": {
         "vue/no-unused-components": "warn",
         "vue/no-unused-vars": "warn",
@@ -30,8 +37,12 @@
       }
     },
     {
-      "files": ["**/*.{ts,tsx}"],
-      "plugins": ["typescript"],
+      "files": [
+        "**/*.{ts,tsx}"
+      ],
+      "plugins": [
+        "typescript"
+      ],
       "rules": {
         "typescript/no-explicit-any": "warn",
         "typescript/no-unused-vars": "warn",
@@ -39,7 +50,12 @@
       }
     },
     {
-      "files": ["**/*.spec.ts", "**/*.test.ts", "**/*.spec.tsx", "**/*.test.tsx"],
+      "files": [
+        "**/*.spec.ts",
+        "**/*.test.ts",
+        "**/*.spec.tsx",
+        "**/*.test.tsx"
+      ],
       "rules": {
         "no-console": "off"
       }
@@ -53,4 +69,3 @@
     "**/*.d.ts"
   ]
 }
-// ...existing code...
