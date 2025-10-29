@@ -1,5 +1,7 @@
-import "./style.css";
-import App from "./App.vue";
-import { createApp } from "vue";
+import './main.scss';
+import App from './App.vue';
+import PrimeVue from 'primevue/config';
+import { createApp } from 'vue';
 
-createApp(App).mount("#app");
+const app = createApp(App);
+app.use(PrimeVue);
