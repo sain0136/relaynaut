@@ -1,3 +1,17 @@
+# Building Code
+
+To build your Rust project, use the following command at the root of workspace all members will be built:
+
+```sh
+cargo build
+```
+
+If building fails try to run cargo clean first:
+
+```sh
+cargo clean
+```
+
 # Linting and Formatting Standards
 
 ## Linting with Clippy

@@ -98,3 +98,4 @@ dist-test/
 **/.cache/
 
 # Add project-specific ignores below
+issues/
